@@ -58,6 +58,19 @@ class Peikko:
 
 
 ### Kirjoita luokka Sankari tähän.
+class Sankari:
+
+
+    # Konstruktori
+    def __init__(self, nimi):
+        self.nimi = nimi
+        self.rohkeus = random.randint(1, 10)
+        self.katseen_voima = random.randint(1, 10)
+        
+    # Metodi arvo_hurraus
+    def arvo_hurraus(self):
+        vaihtoehdot = ["Wohoo!", "Jee!", "Hienoa!", "Voittoa kohti!", "Tämä on meidän päivä!"]
+        return random.choice(vaihtoehdot)
 
 
 def hurraa(olio):
